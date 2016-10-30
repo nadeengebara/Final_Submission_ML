@@ -34,7 +34,7 @@ phi_X2 = build_poly_cos_sin_poly(X2, degree_2, np.array(range(1,30)))
 
 
 ##Obtain Best weights
-w0=reg_logistic_regression(y0, phi_X0, 0, gamma_0, max_iters_0)
+w0=reg_logistic_regression(y0, phi_X0, 0, gamma_0, max_iters_0)[0]
 w1=cross_validation_demo_ridge_regression(y_s1,phi_X1,4,[0],seed=250)
 w2=cross_validation_demo_ridge_regression(y_s2,phi_X2,4,[0],seed=250)
 
