@@ -131,6 +131,10 @@ def correlation_plot_all(Xin,title=''):
 plt.show()
 
 #######################################################Plot Helpers###################################
+## Returns number of invalid value in col_x
+def nb_invalid_data(col_x, invalid_value=-999):
+    """Helper function to determine the number of invalid values for each feature"""
+    return col_x[col_x == invalid_value].shape[0]
 
 #Returns :       vec: Vector with each entry corresponding to the number of Higgs Boson Particle for a jet number group
 #                count: Vector that counts the number of samples for each jet number
