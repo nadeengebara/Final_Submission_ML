@@ -30,7 +30,7 @@ def separate_data(X, jet_col_nb=22):
     
     # find the indices of each discrete category
     invalid_cols_0 = [4, 5, 6, 9, 12, 22, 23, 24, 25, 26, 27, 28, 29]
-    invalid_cols_1 = [4, 5, 6, 9, 12, 22, 26, 27, 28]
+    invalid_cols_1 = [4, 5, 6, 9, 12, 22, 26, 27, 28,29]
     invalid_cols_2 = [9,22]
     #invalid_cols_3 = [22]
     
